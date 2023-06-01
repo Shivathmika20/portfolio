@@ -1,3 +1,4 @@
+import img from './profile__.png'
 import React, { useEffect } from 'react'
 import "./portfolio.css"
 import Typed from 'typed.js';
@@ -62,7 +63,7 @@ const Portfolio = () => {
                             <div className='typed__class'><span className='typed__text' ref={el}  /></div>
                 </div> 
 
-                <div className="about py-16 flex  mb-20">
+                <div id="about" className="about py-16 flex  mb-20">
                     <div className="about-matter mr-20">
                     <span className='flex items-baseline'><h2 className="text-4xl my-12 text__head">About Me</h2><span className='block relative w-60 bottom-2 h-px opacity-30 ml-14 bg-slate-400	'> </span></span> 
                       <div className="text text-slate-300">
@@ -70,10 +71,15 @@ const Portfolio = () => {
                         <p className="leading-9 text__normal">My journey in web development began when I taught myself the basics of HTML and CSS, building simple websites for fun. Since then, I have expanded my knowledge by exploring various frameworks and languages such as Tailwind, Bootstrap, and JavaScript.</p>
                       </div>
                     </div>
-                    <div className="main-image mt-12 relative">
-                        <img className="rounded-xl object-cover w-full h-60" style={{objectFit:'cover', opacity:1}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2048px-Solid_white.svg.png" alt="my picture"/><div className="img-bd border-2 rounded-xl w-full h-60 border-[#FF3AA4] absolute top-4 left-4"></div>
-                    </div>  
-                  </div>
+                    <div className="main-bg_img mt-12 h-60 rounded-xl relative">
+                            <div className="main-image">
+                                <img className="rounded-xl object-cover w-full h-60 border__img" src={img} alt="my picture" />
+                                <div className="image-overlay rounded-xl"></div>
+                            </div>
+                            <div className="img-bd border-2 rounded-xl w-full h-60 border-[#FF3AA4] absolute top-4 left-4"></div>
+                            </div>
+                    </div>
+
                   
                 <div id="education" className="education__container relative mb-72"> 
                     <span className='flex items-baseline'><h2 className="text-4xl mb-16 text__head">Education</h2><span className='block relative w-60 bottom-2 h-px opacity-30 ml-14 bg-slate-400	'> </span></span>

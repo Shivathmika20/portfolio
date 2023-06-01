@@ -25,9 +25,7 @@
   #element{
     color: #FF3AA4;
   }
-  .img-bd{
-    z-index: -1;
-  }
+  
   .my-mail{
     writing-mode: vertical-lr;
    letter-spacing: 0.1em;
@@ -38,7 +36,70 @@
   }
   svg:hover,svg:focus{
     color: #ff3aa3d0;
-    
+  }
+  /* .border__img{
+    object-fit: cover;
+       
+  }
+  .main-image:hover{
+    opacity: 1;
+    transform: translate(-15px,-15px);
+  }
+  .main-bg_img:hover{
+    transform: translate(-15px,-15px);
+
+  }
+  .img-bd:hover{
+    transform: translate(15px,15px);
+  }
+  .main-image{
+    opacity: 0.6;
+    transition: ease-in 1s transform 1s;
+  }
+  .main-bg_img{
+    background-color: #ff0088;
+    transition: ease-in 1s transform 1s;
+  }*/
+  .main-image {
+    position: relative;
+  }
+  .image-overlay:hover{
+    opacity: 0;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 41, 155, 0.684); 
+    mix-blend-mode:normal; 
+    opacity: .6;
+  }
+ 
+  .main-bg_img:nth-child(2){
+    transition: transform  linear 0.2s;
+
+  }
+  .main-bg_img:nth-child(2):hover{
+    transform: translate(2px,2px);
+
+  }
+  .main-image  {
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: transform linear 0.2s;
+  }
+  
+  .main-image:hover{
+    transform: translate(-4px,-4px);
+  }
+  
+  .img-bd{ 
+    z-index: -1;
   }
   .m2{
     width: 70%;
