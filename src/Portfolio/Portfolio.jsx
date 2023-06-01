@@ -38,16 +38,16 @@ const Portfolio = () => {
                 <nav>
                     <ul className="tags block fixed text-white">
                         <li className="pb-6 ">
-                            <a  href="https://github.com/Shivathmika20">
+                            <a  href="https://github.com/Shivathmika20" target='_blank'>
                              <svg className=" w-6 h-6" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" classNameName="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                             </a>
                         </li>
 
-                        <li className="pb-6"><a href="https://www.instagram.com/_shivathmika/?igshid=MzNlNGNkZWQ4Mg%3D%3D">
+                        <li className="pb-6"><a href="https://www.instagram.com/_shivathmika/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target='_blank'>
                             <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" classNameName="feather feather-instagram"><title>Instagram</title><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                         </a></li>
 
-                        <li ><a href="https://www.linkedin.com/in/shivathmika-yeluri-10a923249">
+                        <li ><a href="https://www.linkedin.com/in/shivathmika-yeluri-10a923249" target='_blank'>
                             <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" classNameName="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                         </a></li>
 
@@ -65,20 +65,20 @@ const Portfolio = () => {
 
                 <div id="about" className="about py-16 flex  mb-20">
                     <div className="about-matter mr-20">
-                    <span className='flex items-baseline'><h2 className="text-4xl my-12 text__head">About Me</h2><span className='block relative w-60 bottom-2 h-px opacity-30 ml-14 bg-slate-400	'> </span></span> 
-                      <div className="text text-slate-300">
-                        <p className="leading-9 text__normal">Hello! My name is Y. Shivathmika and I am a passionate student with a deep interest in the fields of  <span className='text-[#FF3AA4]'> Web Development</span> and <span className='text-[#FF3AA4]'>Designing</span>. Currently pursuing my Computer Science Degree with specialization in Information Technology.</p>
-                        <p className="leading-9 text__normal">My journey in web development began when I taught myself the basics of HTML and CSS, building simple websites for fun. Since then, I have expanded my knowledge by exploring various frameworks and languages such as Tailwind, Bootstrap, and JavaScript.</p>
-                      </div>
+                        <span className='flex items-baseline'><h2 className="text-4xl my-12 text__head">About Me</h2><span className='block relative w-60 bottom-2 h-px opacity-30 ml-14 bg-slate-400	'> </span></span> 
+                        <div className="text text-slate-300">
+                            <p className="leading-9 text__normal">Hello! My name is Y. Shivathmika and I am a passionate student with a deep interest in the fields of  <span className='text-[#FF3AA4]'> Web Development</span> and <span className='text-[#FF3AA4]'>Designing</span>. Currently pursuing my Computer Science Degree with specialization in Information Technology.</p>
+                            <p className="leading-9 text__normal">My journey in web development began when I taught myself the basics of HTML and CSS, building simple websites for fun. Since then, I have expanded my knowledge by exploring various frameworks and languages such as Tailwind, Bootstrap, and JavaScript.</p>
+                        </div>        
                     </div>
                     <div className="main-bg_img mt-12 h-60 rounded-xl relative">
-                            <div className="main-image">
-                                <img className="rounded-xl object-cover w-full h-60 border__img" src={img} alt="my picture" />
-                                <div className="image-overlay rounded-xl"></div>
-                            </div>
-                            <div className="img-bd border-2 rounded-xl w-full h-60 border-[#FF3AA4] absolute top-4 left-4"></div>
-                            </div>
-                    </div>
+                        <div className="main-image">
+                            <img className="rounded-xl object-cover w-full h-60 border__img" src={img} alt="my picture" />
+                            <div className="image-overlay rounded-xl"></div>
+                        </div>
+                    <div className="img-bd border-2 rounded-xl w-full h-60 border-[#FF3AA4] absolute top-4 left-4"></div>
+                </div>
+            </div>
 
                   
                 <div id="education" className="education__container relative mb-72"> 
@@ -158,7 +158,7 @@ const Portfolio = () => {
                             <li>
                                 <div className=" space flex flex-row">
                                     <h1 className="space-ui text__normal">UI Design</h1>
-                                    <span className='prog-ui text__normal'> 79%</span>
+                                    <span className='prog-ui text__normal'> 80%</span>
                                 </div> 
                                 <progress className="progress__screen h-1" id="file" value="79" max="100"> 79% </progress>
                                 
@@ -174,7 +174,7 @@ const Portfolio = () => {
                                 <ul className="mail contact__center">
                                     <li><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48" fill="#FF3AA4" stroke-width="1"><path d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"/></svg></li>
                                     <li className='text__normal'>Email</li>
-                                    <li className="underline underline-offset-4 text__normal">yelurishivathmika@gmail.com</li>
+                                    <li className="underline underline-offset-4 "><a href="mailto: [yelurishivathmika@gmail.com]?subject= &body= " className='text__normal'>yelurishivathmika@gmail.com</a></li>
                                 </ul>
                             
                         </div>

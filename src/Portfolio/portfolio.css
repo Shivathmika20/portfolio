@@ -18,7 +18,6 @@
     opacity: .75;
   }
   
-  
   .text{
     font-size: 1.2rem;
   }
@@ -37,29 +36,6 @@
   svg:hover,svg:focus{
     color: #ff3aa3d0;
   }
-  /* .border__img{
-    object-fit: cover;
-       
-  }
-  .main-image:hover{
-    opacity: 1;
-    transform: translate(-15px,-15px);
-  }
-  .main-bg_img:hover{
-    transform: translate(-15px,-15px);
-
-  }
-  .img-bd:hover{
-    transform: translate(15px,15px);
-  }
-  .main-image{
-    opacity: 0.6;
-    transition: ease-in 1s transform 1s;
-  }
-  .main-bg_img{
-    background-color: #ff0088;
-    transition: ease-in 1s transform 1s;
-  }*/
   .main-image {
     position: relative;
   }
@@ -80,11 +56,9 @@
  
   .main-bg_img:nth-child(2){
     transition: transform  linear 0.2s;
-
   }
   .main-bg_img:nth-child(2):hover{
     transform: translate(2px,2px);
-
   }
   .main-image  {
     top:0;
