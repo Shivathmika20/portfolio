@@ -447,6 +447,12 @@
     .text__edu{
       color: aliceblue;
     }
+    .img-bd{
+      display: none;
+    }
+    .image-overlay:hover{
+      opacity: 0 !important;
+    }
 
   }
   
