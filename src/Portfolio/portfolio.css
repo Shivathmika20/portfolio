@@ -14,6 +14,7 @@
     padding: 0;
    
   }
+  
   .list a:hover{
     opacity: .75;
   }
@@ -157,6 +158,7 @@
   }
   .text__normal{
     font-family: 'Dosis', sans-serif;
+    
   }
   .text__head{
     font-family: 'Comic Neue', cursive;
@@ -164,6 +166,97 @@
   .text__edu{
     font-family: 'Ysabeau', sans-serif; 
    }
+   
+   .footer-tags svg:active{
+      color: #FF3AA4;
+   }
+
+   /* animations */
+   .logo{
+    opacity: 0;
+    animation:slideRight 1s ease forwards;
+   }
+   .list{
+    animation:slideTop .5s ease forwards;
+    opacity: 0;
+    animation-delay: .4s;
+   }
+   .block,.typed__class
+   {
+      opacity: 0;
+     animation: slideBottom 1s ease forwards;
+     animation-delay: .8s;
+   }
+   .about{
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1.5s;
+   }
+   .education__container{
+    opacity: 0;
+    animation:slideRight 1s ease forwards;
+    animation-delay: 3s;
+   } 
+   .skill{
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 4s;
+   }
+   .contact{
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 5s;
+   }
+   .footer-tags{
+    animation:slideTop .5s ease forwards;
+    opacity: 0;
+    animation-delay: 5.5s;
+   }
+
+   @keyframes slideRight  {
+    0%{
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    } 
+   }
+
+   @keyframes slideLeft  {
+    0%{
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    } 
+   }
+   
+   @keyframes slideTop   {
+    0%{
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    } 
+   }
+   @keyframes slideBottom {
+    0%{
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    } 
+   }
+  
+  
   @media only screen and (max-width:300px) and (min-width:100px){
     .space{
       display: flex;
@@ -343,6 +436,7 @@
     
     .matter{
         margin: 1.8rem 0 2.2rem 0 !important;
+        
     }
     .block{
       font-size: 3.2rem;
@@ -448,14 +542,20 @@
       color: aliceblue;
     }
     .img-bd{
-      display: none;
+     display: none;
+
     }
     .image-overlay:hover{
       opacity: 0 !important;
     }
-
+    
   }
-  
+ 
+  @media only screen and (min-width:1200px){
+    footer{
+      display: none;
+    }
+  }
   
   
   

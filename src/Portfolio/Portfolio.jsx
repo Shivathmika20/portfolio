@@ -7,7 +7,7 @@ const Portfolio = () => {
     const el = React.useRef(null);
     useEffect(()=>{
         const typed = new Typed(el.current, {
-          strings: ['<code className="text__normal">Frontend Developer</code>.', '<code>Open Source Contributor.</code>','<code>Web Developer.</code>','<code>Frontend Developer.</code>'],
+          strings: ['<code className="text__normal text__main">Web Developer</code>.','<code>UI Designer.</code>'],
           typeSpeed: 110,backSpeed:60,loop:true
         })
         return () => {
@@ -181,7 +181,7 @@ const Portfolio = () => {
                         <div className="col">
                             <ul className="address contact__center">
                                 <li><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48" fill="#FF3AA4"><path d="M480.089-490Q509-490 529.5-510.589q20.5-20.588 20.5-49.5Q550-589 529.411-609.5q-20.588-20.5-49.5-20.5Q451-630 430.5-609.411q-20.5 20.588-20.5 49.5Q410-531 430.589-510.5q20.588 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.292-192.895Q589.417-820 480-820t-184.708 75.105Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-472Z"/></svg></li>
-                                <li className='text__normal'>Adress</li>
+                                <li className='text__normal'>Address</li>
                                 <li className='text__normal'>Hyderabad,India</li>
                             </ul>
                         </div>
@@ -201,6 +201,24 @@ const Portfolio = () => {
             </div>
         </div>
         </div> 
+        <footer>
+            <div className="footer-tags flex items-center justify-center mb-10 ">
+                <ul className='gap-9'>
+                    <li><a  href="https://github.com/Shivathmika20 " target='_blank'>
+                    <svg className=" w-8 h-8" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" classNameName="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a></li>
+                    
+                    <li className=""><a href="https://www.instagram.com/_shivathmika/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target='_blank'>
+                            <svg className="w-8 h-8" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" classNameName="feather feather-instagram"><title>Instagram</title><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a></li>
+
+                    <li ><a href="https://www.linkedin.com/in/shivathmika-yeluri-10a923249" target='_blank'>
+                            <svg className="w-8 h-8" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" classNameName="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a></li>
+                    
+                </ul>
+            </div>
+        </footer>
     </div>
 
     </>
